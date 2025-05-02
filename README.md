@@ -1,7 +1,9 @@
 # Mephy-Shimeji
 
 you can support me by going to my ByMeACoffee below, and you can also check out my normal artwork on my socials! (@smolmephy on everythin)
+
 <a href="https://www.buymeacoffee.com/smolmephy" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+
 Shimeji-ee: Shimeji English Enhanced
 
 Shimeji-ee is a Windows desktop mascot that freely wanders and plays around the screen.  The mascot is very configurable; its actions are defined through xml and its animations/images can be (painstakingly) customized.  Shimeji was originally created by Yuki Yamada of Group Finity (http://www.group-finity.com/Shimeji/).  This branch of the original Shimeji project not only translates the program/source to English, but adds additional enhancements to Shimeji by Kilkakon and other members of the community.
