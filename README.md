@@ -1,11 +1,14 @@
 # Mephy-Shimeji
+
+you can support me by going to my ByMeACoffee below, and you can also check out my normal artwork on my socials! (@smolmephy on everythin)
+<a href="https://www.buymeacoffee.com/smolmephy" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 Shimeji-ee: Shimeji English Enhanced
 
 Shimeji-ee is a Windows desktop mascot that freely wanders and plays around the screen.  The mascot is very configurable; its actions are defined through xml and its animations/images can be (painstakingly) customized.  Shimeji was originally created by Yuki Yamada of Group Finity (http://www.group-finity.com/Shimeji/).  This branch of the original Shimeji project not only translates the program/source to English, but adds additional enhancements to Shimeji by Kilkakon and other members of the community.
 
 This specific shimeji is designed by SmolMephy, and the character is owned by SmolMephy
 
-==== Contents ==== 
+### ==== Contents ==== 
 
 1. Homepage
 2. Requirements
@@ -17,17 +20,18 @@ This specific shimeji is designed by SmolMephy, and the character is owned by Sm
 8. Source
 9. Library
 10. Trouble Shooting
+11. Notes about Mephy shimeji
 
-==== Homepage ==== 
+## ==== Homepage ==== 
 
 Homepage: http://kilkakon.com/shimeji
 
-==== Requirements ==== 
+## ==== Requirements ==== 
 
 1. Windows Vista or higher
 2. Java 8
 
-==== How to Start ==== 
+## ==== How to Start ==== 
 
 Double Click the Shimeji-ee file (Shimeji-ee.jar).
 
@@ -41,7 +45,7 @@ You can also watch the FAQ if you encounter problems: https://www.youtube.com/wa
 
 You can also join my Discord group: https://discord.gg/dcJGAn3
 
-==== Basic Configuration ==== 
+## ==== Basic Configuration ==== 
 
 If you want multiple Shimeji types, you must have multiple image sets.  Basically, you put different folders with the correct Shimeji images under the img directory.
 
@@ -57,7 +61,7 @@ Shimeji-ee will ignore all the image sets that are in the img/unused folder, so 
 
 For more information, read through the configuration files in conf/.  Most options are somewhat complicated, but it's not too hard to limit the total number of Shimeji or to turn off certain behaviors (hint: set frequency to 0.)
 
-==== Advanced Configuration ==== 
+## ==== Advanced Configuration ==== 
 
 All configuration files are located in the in the conf folders.  In general, none of these should need to be touched.
 
@@ -96,26 +100,26 @@ Thrown
 
 The icon used for the system tray is img/icon.png
 
-==== How to Quit ==== 
+## ==== How to Quit ==== 
 
 Right-click the tray icon of Shimeji, Select "Dismiss All"
 
-==== How to Uninstall ==== 
+## ==== How to Uninstall ==== 
 
 Delete the unzipped folder.
 
-==== Source ====
+## ==== Source ====
 
 Programmers may feel free to use the source.  The Shimeji-ee source is under the New BSD license.
 Follow the zlib/libpng licenses.
 
-==== Library ====
+## ==== Library ====
 
 lib / jna.jar and lib / examples.jar of the JNA library.
 JNA follows the LGPL.
 lib / AbsoluteLayout.jar from Netbeans.
 
-==== Trouble Shooting ====
+## ==== Trouble Shooting ====
 
 For a tutorial on how to get Shimeji running, watch this video: https://www.youtube.com/watch?v=S7fPCGh5xxo
 
@@ -132,3 +136,8 @@ If the Shimeji-ee icon appears, but no Shimeji appear:
 3. Make sure you have Java on your system.
 4. If you're somewhat computer savvy, you can try running Shimeji-ee from the command line.  Navigate to the Shimeji-ee directory and run this command: "C:\Program Files (x86)\Java\jre6\bin\java" -jar Shimeji-ee.jar
 5. Try checking the log (ShimejiLogX.log) for errors.  If you find a bug (which is very likely), post it up on the Shimeji-ee homepage in the issues section.
+
+## ==== Notes about Mephy shimeji ====
+
+Mephy has unique actions to the base shimeji file. If you already have shimeji installed and want to add Mephy as an additional character, you must download the images, actions and behaviors (go to advanced configuration to see where to put the files)
+You can message me on my socials (@smolmephy on everything) if you need and help or find any issues that i need to fix, potential things to add, or if you would like to commission me to make one of your own character ^-^
