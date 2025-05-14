@@ -3,25 +3,46 @@
 	xsi:schemaLocation="http://www.group-finity.com/Mascot Mascot.xsd">
 
 	<BehaviorList>
+
+		<Behavior Name="Stand" Frequency="0" Hidden="true">
+			<Action Name="Stand" />
+			<NextBehavior>
+				<BehaviorReference Name="Stand" Frequency="1"/>
+				<BehaviorReference Name="Blink" Frequency="1"/>
+			</NextBehavior>
+		</Behavior>
+
+		<Behavior Name="Blink" Frequency="50">
+			<Action Name="Blink" />
+			<NextBehavior>
+				<BehaviorReference Name="Stand" Frequency="1"/>
+			</NextBehavior>
+		</Behavior>
 	
 		<!-- ALWAYS REQUIRED -->
-		<Behavior Name="ChaseMouse" Frequency="0" Hidden="true">
+		<Behavior Name="ChaseMouse" Frequency="50" Hidden="true">
 			<NextBehavior Add="false">
 				<BehaviorReference Name="SitAndFaceMouse" Frequency="1" />
 			</NextBehavior>
 		</Behavior>
 		
-		<Behavior Name="SitAndFaceMouse" Frequency="0">
+		<Behavior Name="SitAndFaceMouse" Frequency="50">
 			<NextBehavior Add="false">
 				<BehaviorReference Name="SitAndFaceMouse" Frequency="100" />
 				<BehaviorReference Name="SitAndSpinHead" Frequency="1" />
-				<BehaviorReference Name="SitWhileDanglingLegs" Frequency="1" />
+				<BehaviorReference Name="SitWhileSwayingHead" Frequency="1" />
 			</NextBehavior>
 		</Behavior>
 		
-		<Behavior Name="SitAndSpinHead" Frequency="0">
+		<Behavior Name="SitAndSpinHead" Frequency="50">
 			<NextBehavior Add="false">
 				<BehaviorReference Name="SitAndFaceMouse" Frequency="1" />
+			</NextBehavior>
+		</Behavior>
+
+		<Behavior Name="PushUps" Frequency="50">
+			<NextBehavior Add="false">
+				<BehaviorReference Name="PushUps" Frequency="1" />
 			</NextBehavior>
 		</Behavior>
 		
@@ -42,12 +63,13 @@
 			<Behavior Name="StandUp" Frequency="200" Hidden="true" />
 			<Behavior Name="SitDown" Frequency="200">
 				<NextBehavior Add="true">
-					<BehaviorReference Name="SitWhileDanglingLegs" Frequency="100" />
+					<BehaviorReference Name="SitWhileSwayingHead" Frequency="100" />
 					<BehaviorReference Name="LieDown" Frequency="100" />
+					<BehaviorReference Name="PushUps" Frequency="100" />
 				</NextBehavior>
 			</Behavior>
-			<Behavior Name="SitWhileDanglingLegs" Frequency="0" />
-			<Behavior Name="LieDown" Frequency="0">
+			<Behavior Name="SitWhileSwayingHead" Frequency="50" />
+			<Behavior Name="LieDown" Frequency="50">
 				<NextBehavior Add="false">
 					<BehaviorReference Name="SitDown" Frequency="100" />
 					<BehaviorReference Name="CrawlAlongIECeiling" Frequency="100" Condition="${mascot.environment.activeIE.topBorder.isOn(mascot.anchor)}" Hidden="true" />
@@ -55,7 +77,7 @@
 				</NextBehavior>
 			</Behavior>
 			
-			<Behavior Name="SplitIntoTwo" Frequency="50" Condition="#{mascot.totalCount &lt; 50}" />
+			<Behavior Name="WrapInTail" Frequency="50" Condition="#{mascot.totalCount &lt; 50}" />
 		</Condition>
 
 		<!-- On the Wall -->
